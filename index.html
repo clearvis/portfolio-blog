@@ -5,11 +5,34 @@ bodyTag: home
 ---
 
 
-<h1>{{ page.title }}</h1>
+{% for post in paginator.posts %}
+        
+    <article class="homepage post">
 
-{% for post in site.posts %}
-
-    {{ post.date | date: "%B %e, %Y" }}
-    <a href="{{ post.url }}">{{ post.title }}</a>
+            <header>
+        <a href="{{ post.url }}">
+          {% if post.imageURL %}
+            <img src="/images/posts/{{post.imageURL}}" alt="{{ post.description }}" class="{{ post.cornerStyle }} headline">
+          {% endif %}
+               <h1>{{ post.title }}</h1>
+        </a>
+        <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.description }}</p>
+            </header>
+    </article>
 
 {% endfor %}
+
+<!-- Pagination links -->
+<nav class="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/" class="previous">&laquo;</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="previous">&laquo;</a>
+    {% endif %}
+  {% endif %}
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="next ">&raquo;</a>
+  {% endif %}
+</nav>

@@ -12,7 +12,7 @@
    <title>{% if page.title %} {{ page.title }} - {% endif %} James Sacci Blog</title>
 
   <link href='http://fonts.googleapis.com/css?family=Advent+Pro:200' rel='stylesheet' type='text/css'>
-  <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css" />
   
   <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
   
@@ -76,12 +76,12 @@
   </nav> 
   
   <!-- Blog Posts Begin -->
-  <div class="container content">
+  <div class="row">
     <section class="row">
-      <section class="col-md-8">
+      <section class="large-8 columns">
         {{ content }}
       </section>
-      <aside class="col-md-4 sidebar">
+      <aside class="large-4 columns">
         <a href="http://www.shopireland.ie"><img class="shopireland" src="/images/shopireland.png" alt="Shop Amazon in Ireland" /></a>
         <form method="post" action="http://www.shopireland.ie/search/">
           <input type="hidden" name="section" value="home">
