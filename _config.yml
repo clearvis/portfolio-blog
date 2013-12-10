@@ -1,4 +1,6 @@
+base-url:    /
+
 markdown: rdiscount
 permalink: /:title
 #pygments: true
-paginate: 2
+paginate: 4
