@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Generate Blog Using Jekyll"
-description: "This post is an explanation of how I can about using a Ruby Gem called Jekyll t generate my blog"
+description: "This post is an explanation of how I came about using a Ruby Gem called Jekyll to generate my blog"
 categories: 
  - development
  - ruby
