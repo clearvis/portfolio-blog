@@ -6,7 +6,7 @@ layout: default-post
 
   <header class="post">
     {% if page.imageURL %}
-      <img src="/images/posts/{{page.imageURL}}" alt="{{ page.description }}" class="{{ page.cornerStyle }} headline">
+      <img src="images/{{page.imageURL}}" alt="{{ page.description }}" class="{{ page.cornerStyle }} headline">
     {% endif %}
       <h1 id="responsive_headline">{{ page.title }}</h1>
     <p class="date">{{ page.date | date: "%B %d, %Y" }}</p>

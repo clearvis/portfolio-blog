@@ -6,6 +6,7 @@ categories:
  - development
  - ruby
 tags: [ruby,jekyll]
+imageURL: jekyll-post.jpg
 published: true
 ---
 
